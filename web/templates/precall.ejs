@@ -1,25 +1,16 @@
 <div class="main">
   <div id="lefthand-container">
     <header>
-      <a href="http://www.vonage.com" target="_blank" rel="noopener">
+<!--       <a href="http://www.vonage.com" target="_blank" rel="noopener">
         <img src="/images/vonage-logo-no-text.svg" alt="Vonage logo">
-      </a>
+      </a> -->
       <h2>
-        <% if (appName === "Vonage Free Conferencing") { %>
-          Vonage
-          <br>
-          Free Conferencing
-        <% } else { %>
-          <%= appName %>
-        <% } %>
+        DiskLibras
       </h2>
-      <p>
-        <%=introText%>
-      </p>
     </header>
     <% if (introFooterLinkText) { %>
     <footer>
-      <a href="<%=introFooterLinkUrl%>" target="_blank" rel="noopener"><%=introFooterLinkText%></a>
+   <!--    <a href="<%=introFooterLinkUrl%>" target="_blank" rel="noopener"><%=introFooterLinkText%></a> -->
     </footer>
     <% } %>
 </div>
@@ -43,7 +34,7 @@
     </div>
     <div id="settings-prompt">
       <% if (!autoGenerateRoomName && !roomName) { %>
-      <div id="enter-room-name-prompt">
+      <div id="enter-room-name-prompt" hidden>
         <div class="room-name-input-container">
           <input id="room-name-input" class="block username" name="roomName" autocomplete="off" maxlength="46" value="<%=roomName%>">
           <label>Room Name</label>

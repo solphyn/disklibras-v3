@@ -7,7 +7,7 @@ const { Server } = require('swagger-boilerplate');
 const server = new Server({
   apiFile: './api.yml',
   modulePath: `${__dirname}/server/`,
-  appName: 'OpenTokRTC Main',
+  appName: 'DiskLibras',
   staticOptions: {
     dotfiles: 'ignore',
     extensions: ['jpg'],
